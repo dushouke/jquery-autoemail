@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { border: 0; font-size: 100%; font: inherit; vertical-align: baseline; margin: 0; padding: 0; }
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+        body { line-height: 1; }
+        ol, ul { list-style: none; }
+        blockquote, q { quotes: none; }
+        blockquote:before, blockquote:after, q:before, q:after { content: none; }
+        table { border-collapse: collapse; border-spacing: 0; }
+        
+        body { font: 12px/1.5 tahoma,arial, "ËÎÌו"; }
+        input { width: 300px; height: 25px; padding: 3px 4px; border-color: #7C7C7C #CCCCCC #DDDDDD; border-style: solid; border-width: 1px; font: 12px/1.5 tahoma,arial, "ËÎÌו"; }
+        
+        
+        .email_auto { background: none repeat scroll 0 0 #FFFFFF; border: 1px solid #999999; color: #666666; display: none; font: 12px/1.5 Tahoma,Helvetica,arial,sans-serif; left: 120px; overflow: hidden; position: absolute; top: 27px; width: 278px; z-index: 1; }
+        .email_auto p { color: #666666; padding: 3px 5px; }
+        .email_auto ul { cursor: pointer; }
+        .email_auto li { display: block; height: 20px; line-height: 20px; padding: 0 5px; }
+        .email_auto li.current { background-color: #DDDDDD; color: #000000; }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="jquery-autoemail.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#email-input").autoEmail();
+
+            $("#email-input2").autoEmail({ emailDomain: ["@outlook.com", "@gmail.com", "@qq.com"] });
+        })
+    </script>
+</head>
+<body>
+    <div style="width: 960px; margin: 50px auto; text-align: center;">
+        <p style=" margin-bottom:20px;">
+            <label>
+                Email:<input id="email-input" type="text" /></label></p>
+        <p>
+            <label>
+                Email:<input id="email-input2" type="text" /></label></p>
+    </div>
+    
+</body>
+</html>
