@@ -18,7 +18,7 @@
     <script src="jquery-autoemail.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
-            $("#email-input").autoEmail();//test
+            $("#email-input").autoEmail();//test1
 
             $("#email-input2").autoEmail({ emailDomain: ["@outlook.com", "@gmail.com", "@qq.com"] });//自定义填充email列表
         })
